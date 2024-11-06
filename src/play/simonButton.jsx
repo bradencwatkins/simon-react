@@ -9,7 +9,7 @@ export const SimonButton = React.forwardRef(({ position, onPressed }, ref) => {
   // and simulate a button press. This is necessary to play the sequence that
   // the player must copy.
   React.useImperativeHandle(ref, () => ({
-    async press(delayMs = 500, playSound = true) {
+    async press(delayMs = 50, playSound = true) {
       setLightOn(false);
       if (playSound) {
         sound.play();

@@ -57,7 +57,7 @@ export function SimonGame(props) {
   React.useEffect(() => {
     if (sequence.length > 0) {
       const playSequence = async () => {
-        await delay(500);
+        await delay(50);
         for (const btn of sequence) {
           await btn.ref.current.press();
         }
